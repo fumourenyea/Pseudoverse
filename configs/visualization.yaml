@@ -1,0 +1,6 @@
+# 可视化配置
+canvas_width: 800
+canvas_height: 600
+color_map: inferno
+update_rate_ms: 100
+show_grid: true

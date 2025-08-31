@@ -1,0 +1,15 @@
+# 物理模块参数
+gravitational_constant: 1.0
+speed_of_light: 1.0
+hbar: 0.1
+
+fields:
+  - electron
+  - quark_up
+  - quark_down
+  - Higgs
+
+hadronizer:
+  enable_tetraquark: true
+  enable_mesons: true
+  enable_baryons: true

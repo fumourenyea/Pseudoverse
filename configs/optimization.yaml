@@ -1,0 +1,19 @@
+# 优化策略参数
+lod:
+  levels:
+    0:
+      compute_budget: 0.01
+      update_frequency: 100
+    1:
+      compute_budget: 0.2
+      update_frequency: 10
+    2:
+      compute_budget: 1.0
+      update_frequency: 1
+
+blackhole_compressor:
+  threshold: 5.0
+
+expansion_controller:
+  trigger_pressure: 1.5
+  expansion_rate: 0.01

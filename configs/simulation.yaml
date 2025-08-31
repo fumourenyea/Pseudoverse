@@ -1,0 +1,27 @@
+# 模拟配置
+simulation:
+  grid_size: [128, 128]
+  time_step: 0.01
+  total_steps: 1000
+  visualization_interval: 20
+
+# 物理配置
+physics:
+  fields: ['electron', 'quark_up', 'quark_down', 'Higgs']
+
+# 优化配置
+optimization:
+  lod:
+    computation_budget:
+      0: 0.01  # 未观测区域
+      1: 0.20  # 仪器观测区域
+      2: 1.00  # 直接观测区域
+  blackhole_compressor:
+    threshold: 5.0
+  expansion_controller:
+    trigger_pressure: 1.5
+    expansion_rate: 0.01
+
+# 可视化配置
+visualization:
+  output_dir: "output"

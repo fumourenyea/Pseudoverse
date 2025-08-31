@@ -1,0 +1,9 @@
+# 日志系统配置
+level: INFO
+file: pseudoverse.log
+console: true
+format: "[%(asctime)s] [%(levelname)s] %(message)s"
+rotate:
+  enabled: true
+  max_bytes: 10485760  # 10 MB
+  backup_count: 5
